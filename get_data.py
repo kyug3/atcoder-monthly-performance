@@ -2,9 +2,6 @@ import requests
 import json
 from collections import defaultdict
 
-user = "Eguy"
-url = "https://atcoder.jp/users/" + user + "/history/json"
-
 
 def get_data(url):
     r = requests.get(url)
@@ -28,6 +25,4 @@ def get_data(url):
 
     return data_list
 
-if __name__ == "__main__":
-    print(get_data(url))
     
