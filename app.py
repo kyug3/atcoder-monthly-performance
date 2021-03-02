@@ -11,7 +11,7 @@ def index():
 
 @app.route('/send', methods=['POST'])
 def send():
-    heading = ['年月', '参加回数', '平均', '最大', '最小']
+    heading = ['年月', '参加回数', '平均', '最高', '最低']
     user = request.form['User']
     url = "https://atcoder.jp/users/" + user + "/history/json"
     data_list = get_data(url)
